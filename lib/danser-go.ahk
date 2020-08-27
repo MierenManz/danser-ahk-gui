@@ -65,7 +65,6 @@ class DANSER { ;                          Only a few parameters are required. us
             } else {
                 SetWorkingDir % this.danserdir
                 command := this.danserpath . this.artist . this.title . this.diff . this.creator . this.cursors . this.tag . this.speed . this.pitchvalue . this.mover . this.fps . this.debug
-                Clipboard := command
                 run % command
             }
         }

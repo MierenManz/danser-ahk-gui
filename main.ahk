@@ -21,10 +21,10 @@ Submit:
 {
     gui, main:Submit, Hide
     osudance.title(title)
-    if (!Cursor || Cursor = "0") {
+    if (!Cursor || Floor(Cursor) = 0) {
         Cursor := 1
     }
-    if (!Tag || Tag >= 0) {
+    if (!Tag || Floor(Tag) = 0) {
         Tag := 1
     }
     if (Mover = "" || !Mover) {
