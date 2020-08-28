@@ -41,7 +41,7 @@ class DANSER { ;                          Only a few parameters are required. us
         }
     }
     speed(speedvalue) { ;               Set the speed of the map
-        if (speedvalue != "0" || speedvalue != "0.0") {; Cannot be 0 because you can't devide by 0
+        if (speedvalue != "0" || speedvalue != "0.0") { ; Cannot be 0 because you can't devide by 0
             this.speed := "-speed=" . speedvalue . " "
         } else {
             throw "a speed of 0 or lower is selected! Exiting app"
@@ -83,6 +83,5 @@ class DANSER { ;                          Only a few parameters are required. us
         SetWorkingDir % this.danserdir
         command := this.danserpath . this.artist . this.title . this.diff . this.creator . this.cursors . this.tag . this.speed . this.pitchvalue . this.mover . this.fps . this.play . this.debug
         run % command
-        }
     }
 }
